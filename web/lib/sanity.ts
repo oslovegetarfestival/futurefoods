@@ -3,7 +3,7 @@ import imageUrlBuilder from "@sanity/image-url"
 
 // Sanity config
 export const sanityConfig = {
-  dataset: "prod",
+  dataset: "production",
   projectId: "my3d893d",
   apiVersion: "2022-09-20",
   // Use CDN for development to save API quota (but don't in prod, to ensure latest changes during build)
