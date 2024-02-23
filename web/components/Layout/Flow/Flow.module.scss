@@ -1,0 +1,24 @@
+// Default flow
+// https://24ways.org/2018/managing-flow-and-rhythm-with-css-custom-properties/
+// https://every-layout.dev/layouts/stack/
+
+.flow {
+  display: block;
+}
+
+// Modifiers
+.-xsmall > * + * {
+  margin-block-start: 0.5em;
+}
+
+.-small > * + * {
+  margin-block-start: 1em;
+}
+
+.-normal > * + * {
+  margin-block-start: 1.5em;
+}
+
+.-large > * + * {
+  margin-block-start: 2em;
+}

@@ -1,0 +1,73 @@
+// Scss variables (needed for media query support)
+@import "styles/breakpoints";
+
+// Global variables
+:root {
+  // Colors
+  --color-oatmilk: #ffffea;
+  --color-soymilk: #ffffdc;
+  --color-almondmilk: #fff3e0;
+
+  --color-kale: #004f30;
+  --color-avocado: #bef097;
+  --color-cucumber: #2e945e;
+  --color-lime: #38c959;
+
+  --color-banana: #fbed5a;
+  --color-orange: #ffcc1a;
+  --color-peach: #ffab8a;
+  --color-lychee: #ffcdde;
+  --color-tomato: #ff5200;
+  --color-strawberry: #fc030f;
+
+  --color-lavender: #c9ccfd;
+  --color-aubergine: #d7bbf8;
+  --color-cherry: #851f4a;
+  --color-potato: #b28f45;
+  --color-raspberry: #de1545;
+
+  // Spacing
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 24px;
+  --spacing-6: 32px;
+  --spacing-7: 40px;
+  --spacing-8: 56px;
+  --spacing-9: 64px;
+  --spacing-10: 80px;
+  --spacing-11: 120px;
+
+  --spacing-gap: var(--spacing-4);
+
+  // Page settings
+  --page-width-xlarge: 1680px;
+  --page-width-large: 1380px;
+  --page-width-medium: 1080px;
+  --page-width-small: 780px;
+
+  // Gutter settings
+  --page-gutter: var(--spacing-7);
+  @media (max-width: $breakpoint-tablet) {
+    --page-gutter: var(--spacing-4);
+  }
+
+  --vertical-gutter: var(--spacing-9);
+  @media (max-width: $breakpoint-mobile) {
+    --vertical-gutter: var(--spacing-8);
+  }
+
+  --grid-gutter: var(--spacing-7);
+  @media (max-width: $breakpoint-tablet) {
+    --grid-gutter: var(--spacing-6);
+  }
+
+  // Animations
+  --transition: 0.2s cubic-bezier(0, 0, 0.3, 0.9);
+  --transition-quick: 0.1s cubic-bezier(0, 0, 0.3, 0.9);
+
+  // Border
+  --border-radius: var(--spacing-3);
+  --border-radius-large: var(--spacing-6);
+}

@@ -1,0 +1,109 @@
+.button {
+  display: inline-block;
+  font-family: "Strike";
+  font-weight: 500;
+  border: none;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+  clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+  cursor: pointer;
+  text-wrap: balance;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &--arrow {
+    &:after {
+      content: "→";
+      display: inline-block;
+      margin-left: 0.6em;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover {
+      &:after {
+        transform: translateX(20%);
+      }
+    }
+  }
+
+  &--arrow-external {
+    &:after {
+      content: "\2197";
+      position: relative;
+      top: -4px;
+    }
+  }
+}
+
+// Colors
+.color--orange {
+  background-color: var(--color-orange);
+  color: var(--color-kale);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-banana);
+  }
+}
+
+.color--green {
+  background-color: var(--color-kale);
+  color: var(--color-almondmilk);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-cucumber);
+  }
+}
+
+.color--white {
+  background-color: var(--color-almondmilk);
+  color: var(--color-cherry);
+
+  &:hover,
+  &:focus {
+    filter: brightness(105%);
+  }
+}
+
+.color--pink {
+  background-color: var(--color-peach);
+  color: var(--color-cherry);
+
+  &:hover,
+  &:focus {
+    filter: brightness(105%);
+  }
+}
+
+.color--cherry {
+  background-color: var(--color-cherry);
+  color: var(--color-almondmilk);
+
+  &:hover,
+  &:focus {
+    filter: brightness(105%);
+  }
+}
+
+// Size
+.size--small {
+  padding: var(--spacing-1) var(--spacing-5);
+}
+
+.size--medium {
+  padding: var(--spacing-1) var(--spacing-5);
+  font-size: 1.4rem;
+
+  @media (max-width: 500px) {
+    padding: var(--spacing-1) var(--spacing-4);
+    font-size: 1.2rem;
+  }
+}
+
+.size--large {
+  padding: var(--spacing-2) var(--spacing-7);
+  font-size: 1.7rem;
+}

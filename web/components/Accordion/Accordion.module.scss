@@ -1,0 +1,45 @@
+.wrap {
+  background: var(--color-lavender);
+  border-radius: var(--border-radius);
+  overflow: hidden; // Make rounded edges on bottom work when open
+}
+
+.summary {
+  list-style: none;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  padding: var(--spacing-5);
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+
+.icon {
+  transform: rotate(180deg);
+  margin-right: var(--spacing-3);
+  min-width: 24px;
+  margin-left: var(--spacing-5);
+}
+
+.details {
+  transition: var(--transition-quick);
+  border-bottom: 1px solid var(--color-cherry);
+
+  &:last-of-type {
+    border-color: transparent;
+  }
+}
+
+.details[open] {
+  background: var(--color-peach);
+
+  & .icon {
+    transform: rotate(0deg);
+  }
+}
+
+.content {
+  margin: 0 var(--spacing-5) var(--spacing-6);
+}

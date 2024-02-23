@@ -1,0 +1,140 @@
+@import "utils/fluidtype";
+
+// Fluid typography
+$minWidth: 320px;
+$maxWidth: 1200px;
+
+@font-face {
+  font-display: fallback;
+  font-family: "Strike";
+  src: url("/fonts/Strike-Black.eot");
+  src: url("/fonts/Strike-Black.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Strike-Black.woff2") format("woff2"),
+    url("/fonts/Strike-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/jost-v14-latin-regular.eot");
+  src: url("/fonts/jost-v14-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/jost-v14-latin-regular.woff2") format("woff2"),
+    url("/fonts/jost-v14-latin-regular.woff") format("woff");
+}
+@font-face {
+  font-display: fallback;
+  font-family: "Jost";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/jost-v14-latin-italic.eot");
+  src: url("/fonts/jost-v14-latin-italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/jost-v14-latin-italic.woff2") format("woff2"),
+    url("/fonts/jost-v14-latin-italic.woff") format("woff");
+}
+@font-face {
+  font-display: fallback;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/jost-v14-latin-500.eot");
+  src: url("/fonts/jost-v14-latin-500.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/jost-v14-latin-500.woff2") format("woff2"),
+    url("/fonts/jost-v14-latin-500.woff") format("woff");
+}
+@font-face {
+  font-display: fallback;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/jost-v14-latin-600.eot");
+  src: url("/fonts/jost-v14-latin-600.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/jost-v14-latin-600.woff2") format("woff2"),
+    url("/fonts/jost-v14-latin-600.woff") format("woff");
+}
+
+html {
+  @include fluid-type($minWidth, 1000px, 18px, 20px);
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+h1,
+.h1 {
+  @include fluid-type($minWidth, $maxWidth, 36px, 56px);
+  font-family: "Strike";
+}
+
+h2,
+.h2 {
+  @include fluid-type($minWidth, $maxWidth, 28px, 36px);
+  font-weight: 600;
+}
+
+h3,
+.h3 {
+  @include fluid-type($minWidth, $maxWidth, 22px, 28px);
+  font-weight: 600;
+}
+
+h4,
+.h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+h5,
+.h5 {
+  @include fluid-type($minWidth, 1000px, 18px, 20px);
+  font-weight: normal;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.font-strike {
+  font-family: "Strike";
+}
+
+.font-jost {
+  font-family: "Jost", sans-serif;
+}
+
+.lead {
+  @include fluid-type($minWidth, $maxWidth, 22px, 28px);
+  text-align: center;
+  margin: 1rem auto 0;
+  text-wrap: balance;
+}
+
+.page-title {
+  @include fluid-type($minWidth, $maxWidth, 42px, 72px);
+  text-align: center;
+  text-wrap: balance;
+}
+
+.breadcrumb {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto 0.6rem;
+}

@@ -1,0 +1,26 @@
+.wrap {
+  max-width: var(--page-width-large);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-gap: var(--grid-gutter);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
+}
+
+.imageWrap {
+  background: var(--color-aubergine);
+  border-radius: 50%;
+  aspect-ratio: 1;
+  margin: 0 auto;
+  max-width: 250px;
+  overflow: hidden;
+}
+
+.subTitle {
+  text-transform: uppercase;
+  font-size: 80%;
+  color: var(--color-cherry);
+}

@@ -1,0 +1,74 @@
+.illustrations {
+  margin-bottom: -124px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 600px) {
+    margin-bottom: -60px;
+  }
+
+  @media (max-width: 400px) {
+    margin-bottom: -50px;
+  }
+
+  > svg {
+    max-width: none;
+    flex-shrink: 0.5;
+
+    @media (max-width: 600px) {
+      flex-shrink: 0.8;
+    }
+  }
+}
+
+.uneven {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="190" height="6" viewBox="0 0 190 6" fill="none"><path d="M0 0L6 1L16 2L25 0.6L58.5 1.5L98.5 0L123.5 1.5L161.5 1L190 0V6H0L0 0Z" fill="%23851F4A"/></svg>');
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 6px;
+  margin-bottom: -1px;
+}
+
+.footer {
+  background-color: var(--color-cherry);
+  color: var(--color-almondmilk);
+  padding-top: 80px;
+
+  @media (max-width: 600px) {
+    padding-top: 40px;
+  }
+}
+
+.logo {
+  line-height: 0.9;
+  span {
+    display: block;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.menuItem {
+  margin-right: 2rem;
+  font-family: "Strike";
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.tickets {
+  padding: var(--spacing-1) var(--spacing-5);
+  background-color: var(--color-tomato);
+  color: var(--color-oatmilk);
+  text-transform: none;
+  letter-spacing: normal;
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s ease;
+  clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+  &:hover {
+    background-color: var(--color-aubergine);
+  }
+}

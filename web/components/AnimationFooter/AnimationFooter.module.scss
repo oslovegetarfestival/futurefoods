@@ -1,0 +1,101 @@
+.sway {
+  animation: sway 4s infinite ease alternate;
+  transform-origin: center bottom;
+}
+
+.wind {
+  animation: wind 3s infinite ease alternate;
+  transform-origin: center bottom;
+}
+
+.tilt {
+  animation: wind 7s infinite ease alternate;
+  transform-origin: center bottom;
+}
+
+.rotate {
+  animation: rotate 4s infinite ease alternate;
+  transform-origin: center;
+}
+
+.slide {
+  animation: slide 8s infinite ease alternate;
+  transform-origin: center;
+}
+
+.blink {
+  animation: blink 10s infinite ease alternate;
+}
+
+.blink2 {
+  animation: blink 10s infinite ease;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-6deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes sway {
+  0% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
+
+@keyframes wind {
+  0% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
+
+@keyframes tilt {
+  0% {
+    transform: rotate(-4deg);
+  }
+  100% {
+    transform: rotate(4deg);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  82% {
+    opacity: 0;
+  }
+  84% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
