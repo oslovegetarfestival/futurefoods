@@ -1,6 +1,6 @@
-# Future foods
+# Future Foods
 
-Website and CMS for Future foods.
+Website and CMS for Future Foods.
 
 ## Explore
 

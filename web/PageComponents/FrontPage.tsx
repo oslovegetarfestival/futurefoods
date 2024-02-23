@@ -26,7 +26,7 @@ const FrontPage: NextPage<Props> = ({ page = {} }) => {
         isResponsive
       >
         <Section width="large" noPadding="sides">
-          <h2>Nytt fra julemarkedet</h2>
+          <h2>Nytt fra Future Foods</h2>
 
           <Block top="7" bottom="5">
             <Card data={page?.promotedNews} isEagerLoadImages isScroll />
@@ -44,7 +44,7 @@ const FrontPage: NextPage<Props> = ({ page = {} }) => {
         isResponsive
       >
         <Section width="large" noPadding="sides">
-          <h2>Dette skjer på julemarkedet</h2>
+          <h2>Dette skjer på Future Foods</h2>
 
           <Block top="7" bottom="5">
             <Card

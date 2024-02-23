@@ -5,7 +5,7 @@ import schemas from "./schemas/schema";
 import deskStructure from "./deskStructure";
 
 export default defineConfig({
-  title: "Julefestivalen",
+  title: "Future foods",
   projectId: "my3d893d",
   dataset: "prod",
   plugins: [deskTool({ structure: deskStructure }), visionTool()],

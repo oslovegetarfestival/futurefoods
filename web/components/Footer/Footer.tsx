@@ -23,13 +23,13 @@ export const Footer = () => {
             <Flow>
               <Grid>
                 <Flow space="small">
-                  <h2 className="font-strike">Om julemarkedet</h2>
+                  <h2 className="font-strike">Om Future Foods</h2>
                   <p>
-                    uture Foods er konferansen om plantebasert mat. Vi inviterer
-                    deg som jobber med matbransjen til en inspirerende dag med
-                    dyktige foredragsholdere, case studies og mingling.
+                    Future Foods er konferansen om plantebasert mat. Vi
+                    inviterer deg som jobber med matbransjen til en inspirerende
+                    dag med dyktige foredragsholdere, case studies og mingling.
                     <Link href="/om-oss" className="link link--white">
-                      Mer om Future foods
+                      Mer om Future Foods
                     </Link>
                   </p>
                   <Button
