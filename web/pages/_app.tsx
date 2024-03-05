@@ -61,7 +61,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
       {/* https://nextjs.org/docs/basic-features/script */}
       {/* Piwik Pro */}
-      {/* <Script
+      <Script
         id="piwikPro"
         strategy="lazyOnload"
         dangerouslySetInnerHTML={{
@@ -73,10 +73,10 @@ function MyApp({ Component, pageProps }: AppProps) {
             var qP=[];dataLayerName!=="dataLayer"&&qP.push("data_layer_name="+dataLayerName),isStgDebug&&qP.push("stg_debug");var qPString=qP.length>0?("?"+qP.join("&")):"";
             tags.async=!0,tags.src="https://oslovegetarfestival.containers.piwik.pro/"+id+".js"+qPString,scripts.parentNode.insertBefore(tags,scripts);
             !function(a,n,i){a[n]=a[n]||{};for(var c=0;c<i.length;c++)!function(i){a[n][i]=a[n][i]||{},a[n][i].api=a[n][i].api||function(){var a=[].slice.call(arguments,0);"string"==typeof a[0]&&window[dataLayerName].push({event:n+"."+i+":"+a[0],parameters:[].slice.call(arguments,1)})}}(i[c])}(window,"ppms",["tm","cm"]);
-            })(window, document, 'dataLayer', 'd8416078-8712-4de4-b86d-1245c62b2127');
+            })(window, document, 'dataLayer', '994962ea-9f95-4ff6-b5a1-50acb51273fc');
           `,
         }}
-      /> */}
+      />
 
       {/* Google Tag Manager */}
       {/* <Script src="https://www.googletagmanager.com/gtag/js?id=AW-11138954316" />
