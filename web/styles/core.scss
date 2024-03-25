@@ -1,7 +1,7 @@
 // Globals
 body {
   background: var(--color-almondmilk);
-  color: var(--color-cherry);
+  color: var(--color-kale);
   min-width: 320px;
   vertical-align: baseline;
   position: relative;
@@ -21,9 +21,9 @@ a {
 
 // Re-enable link style
 .link {
-  border-bottom: 2px solid var(--color-cherry);
+  border-bottom: 2px solid var(--color-kale);
   cursor: pointer;
-  background: linear-gradient(0deg, var(--color-cherry), var(--color-cherry)) no-repeat right bottom / 0 2px;
+  background: linear-gradient(0deg, var(--color-kale), var(--color-kale)) no-repeat right bottom / 0 2px;
   transition: background-size 350ms;
   font-weight: 500;
 

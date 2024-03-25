@@ -3,9 +3,7 @@
   font-family: "NeueMachina";
   font-weight: 500;
   border: none;
-  border-radius: var(--border-radius);
   transition: all 0.3s ease;
-  clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
   cursor: pointer;
   text-wrap: balance;
 
@@ -60,7 +58,7 @@
 
 .color--white {
   background-color: var(--color-almondmilk);
-  color: var(--color-cherry);
+  color: var(--color-kale);
 
   &:hover,
   &:focus {
