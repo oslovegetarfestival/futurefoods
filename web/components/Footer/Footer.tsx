@@ -76,12 +76,6 @@ export const Footer = () => {
               </Grid>
 
               <Flex justify="spaceBetween" align="end" wrap>
-                <p className="h1 font-strike">
-                  <Link href="/" className={styles.logo}>
-                    <span>Oslo</span> <span>Vegetar</span>
-                    <span>festival</span>
-                  </Link>
-                </p>
                 <Link href="/personvern" className="link link--white">
                   Personvern og cookies
                 </Link>
