@@ -40,32 +40,11 @@ export const Header = ({ isFrontpage }: Props) => {
   return (
     <header>
       <Section width="large" verticalPadding="small">
-        {/* {!isFrontpage && (
-          <img
-            src="/logo-candy.svg"
-            alt=""
-            className={styles.logoCandy}
-            aria-hidden
-            loading="eager"
-          />
-        )} */}
-
         <Flex justify="spaceBetween" align="start">
           {(!isFrontpage || isMobileMenuOpen) && (
-            <p className="h1">
-              <Link href="/" className={logoClass} title="Til forsiden">
-                <span>Future Foods</span>
-                <span className={styles.date}>10. september 2024</span>
-              </Link>
-            </p>
-          )}
-
-          {isFrontpage && (
-            <p className={styles.mainLogo}>
-              <span>Oslo</span>
-              <span>Vegetar</span>
-              <span>festival</span>
-            </p>
+            <Link href="/" className={logoClass} title="Til forsiden">
+              <img src="/logo.svg" alt="" aria-hidden loading="eager" />
+            </Link>
           )}
 
           <nav
