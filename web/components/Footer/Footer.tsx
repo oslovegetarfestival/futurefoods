@@ -23,14 +23,15 @@ export const Footer = () => {
             <Flow>
               <Grid>
                 <Flow space="small">
-                  <h2 className="font-strike">Om Future Foods</h2>
+                  <h2 className="font-title">Om Future Foods</h2>
                   <p>
                     Future Foods er konferansen om plantebasert mat. Vi
                     inviterer deg som jobber med matbransjen til en inspirerende
-                    dag med dyktige foredragsholdere, case studies og mingling.
+                    dag med dyktige foredragsholdere, case studies og mingling.{" "}
                     <Link href="/om-oss" className="link link--white">
                       Mer om Future Foods
                     </Link>
+                    .
                   </p>
                   <Button
                     color="white"
@@ -42,7 +43,7 @@ export const Footer = () => {
                 </Flow>
 
                 <Flow space="small">
-                  <h2 className="font-strike">Kontakt</h2>
+                  <h2 className="font-title">Kontakt</h2>
                   <p>
                     <strong>E-post</strong>
                     <br />
@@ -65,7 +66,7 @@ export const Footer = () => {
                 </Flow>
 
                 <Flow space="small">
-                  <h2 className="font-strike">Nyhetsbrev</h2>
+                  <h2 className="font-title">Nyhetsbrev</h2>
                   <p>
                     Få siste nytt om plantebasert mat, konkurranser, utlodninger
                     og mye mer!
@@ -75,7 +76,7 @@ export const Footer = () => {
               </Grid>
 
               <Flex justify="spaceBetween" align="end" wrap>
-                <p className="h1">
+                <p className="h1 font-strike">
                   <Link href="/" className={styles.logo}>
                     <span>Oslo</span> <span>Vegetar</span>
                     <span>festival</span>

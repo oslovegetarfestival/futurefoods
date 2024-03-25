@@ -12,7 +12,7 @@
     margin-bottom: -50px;
   }
 
-  > svg {
+  >svg {
     max-width: none;
     flex-shrink: 0.5;
 
@@ -42,9 +42,11 @@
 
 .logo {
   line-height: 0.9;
+
   span {
     display: block;
   }
+
   &:hover {
     text-decoration: none;
   }
@@ -52,7 +54,7 @@
 
 .menuItem {
   margin-right: 2rem;
-  font-family: "Strike";
+  font-family: "NeueMachina";
 
   &:last-child {
     margin-right: 0;
@@ -68,6 +70,7 @@
   border-radius: var(--border-radius);
   transition: background-color 0.3s ease;
   clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+
   &:hover {
     background-color: var(--color-aubergine);
   }

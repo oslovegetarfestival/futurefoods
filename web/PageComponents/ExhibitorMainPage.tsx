@@ -57,7 +57,7 @@ const ExhibitorMainPage: NextPage<Props> = ({ page = {} }) => {
 
       <Section width="large">
         <Block bottom="2">
-          <p className="font-strike">Hopp til: </p>
+          <p className="font-title">Hopp til: </p>
         </Block>
         <Flex align="center" gap="small" wrap>
           {groupedByType?.map(({ title }) => (

@@ -99,7 +99,7 @@ const EventMainPage: NextPage<Props> = ({ page = {} }) => {
         <Flex justify="spaceBetween" gap="medium">
           <div style={{ flex: "1 1 0px" }}>
             <Block bottom="2">
-              <p className="font-strike">Hopp til: </p>
+              <p className="font-title">Hopp til: </p>
             </Block>
             <Flex align="center" gap="small" wrap>
               {groupedData?.map(({ startDate }) => (
@@ -117,7 +117,7 @@ const EventMainPage: NextPage<Props> = ({ page = {} }) => {
 
           <div style={{ flex: "1 1 0px" }}>
             <Block bottom="2">
-              <p className="font-strike">Vis kun: </p>
+              <p className="font-title">Vis kun: </p>
             </Block>
             <Flex align="center" gap="small" wrap>
               <Button

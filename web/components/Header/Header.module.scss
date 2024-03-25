@@ -8,6 +8,7 @@ $breakpoint: 1150px;
   span {
     display: block;
   }
+
   &:hover {
     text-decoration: none;
   }
@@ -18,7 +19,7 @@ $breakpoint: 1150px;
 }
 
 .mainLogo {
-  font-family: "Strike";
+  font-family: "NeueMachina";
   line-height: 0.9;
   font-size: 2rem;
   position: relative;
@@ -73,7 +74,7 @@ $breakpoint: 1150px;
 
 .menuItem {
   margin-right: 1.8rem;
-  font-family: "Strike";
+  font-family: "NeueMachina";
   font-size: 120%;
 
   @media (max-width: $breakpoint) {
@@ -93,7 +94,7 @@ $breakpoint: 1150px;
   right: 16px;
   top: 16px;
 
-  @media (min-width: calc($breakpoint + 1px )) {
+  @media (min-width: calc($breakpoint + 1px)) {
     display: none;
   }
 }
