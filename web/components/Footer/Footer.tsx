@@ -10,10 +10,10 @@ import { Button } from "components/Button"
 export const Footer = () => {
   return (
     <>
-      <div className={styles.illustrations}>
+      {/* <div className={styles.illustrations}>
         <AnimationFooter />
-      </div>
-      <div className={styles.uneven} />
+      </div> */}
+      {/* <div className={styles.uneven} /> */}
       <footer className={styles.footer}>
         <Section width="xlarge">
           <Section centerContent>
