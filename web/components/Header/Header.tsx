@@ -64,40 +64,26 @@ export const Header = ({ isFrontpage }: Props) => {
                 data-animate-in
                 data-animation-order="2"
               >
-                <Link href="/utstillere">Utstillere</Link>
+                <Link href="/Foredragsholdere">Foredragsholdere</Link>
               </li>
               <li
                 className={styles.menuItem}
                 data-animate-in
                 data-animation-order="3"
               >
-                <Link href="/praktisk-info">Praktisk info</Link>
+                <Link href="/om-konferansen">Om konferansen</Link>
               </li>
               <li
                 className={styles.menuItem}
                 data-animate-in
                 data-animation-order="4"
               >
-                <Link href="/bli-frivillig">Bli frivillig</Link>
+                <Link href="/om-oss">Planteprisen</Link>
               </li>
               <li
                 className={styles.menuItem}
                 data-animate-in
                 data-animation-order="5"
-              >
-                <Link href="/om-oss">Om oss</Link>
-              </li>
-              <li
-                className={styles.menuItem}
-                data-animate-in
-                data-animation-order="6"
-              >
-                <Link href="/english">English</Link>
-              </li>
-              <li
-                className={styles.menuItem}
-                data-animate-in
-                data-animation-order="7"
               >
                 <Button
                   color="pink"
