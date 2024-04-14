@@ -64,7 +64,7 @@ export const Header = ({ isFrontpage }: Props) => {
                 data-animate-in
                 data-animation-order="2"
               >
-                <Link href="/Foredragsholdere">Foredragsholdere</Link>
+                <Link href="/foredragsholdere">Foredragsholdere</Link>
               </li>
               <li
                 className={styles.menuItem}
@@ -78,7 +78,7 @@ export const Header = ({ isFrontpage }: Props) => {
                 data-animate-in
                 data-animation-order="4"
               >
-                <Link href="/om-oss">Planteprisen</Link>
+                <Link href="/planteprisen">Planteprisen</Link>
               </li>
               <li
                 className={styles.menuItem}
