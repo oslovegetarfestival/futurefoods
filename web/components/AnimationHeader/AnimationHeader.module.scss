@@ -61,7 +61,7 @@
 }
 
 .tilt {
-  animation: wind 7s infinite ease alternate;
+  animation: tilt 7s infinite ease alternate;
   transform-origin: center bottom;
 }
 
@@ -167,11 +167,11 @@
 
 @keyframes tilt {
   0% {
-    transform: rotate(-4deg);
+    transform: rotate(-6deg);
   }
 
   100% {
-    transform: rotate(4deg);
+    transform: rotate(6deg);
   }
 }
 
