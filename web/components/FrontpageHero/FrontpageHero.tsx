@@ -15,8 +15,6 @@ export const FrontpageHero = () => {
       >
         <AnimationHeader />
 
-        {/* <img src="/logo.svg" alt="Future Foods" loading="eager" /> */}
-
         <div className={styles.logo}>
           <span>Future Foods</span>
           <span>på [sted kommer] Oslo</span>

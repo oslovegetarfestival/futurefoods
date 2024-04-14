@@ -3,15 +3,28 @@
   right: calc(50% + 480px);
   transform: translateX(50%);
   z-index: -1;
-  width: 570px;
-  top: 40px;
+  width: 500px;
+  top: 0px;
+
+  @media(max-width: 800px) {
+    left: -80px;
+    width: 200px;
+    transform: none;
+  }
 }
 
 .wrapRight {
   position: absolute;
   right: calc(50% - 480px);
   transform: translateX(50%);
+  width: 500px;
   z-index: -1;
+
+  @media(max-width: 800px) {
+    right: -80px;
+    width: 200px;
+    transform: none;
+  }
 }
 
 .animation {
@@ -71,10 +84,12 @@
 }
 
 @keyframes up-down {
+
   0%,
   100% {
     transform: translate(0px, 0px);
   }
+
   50% {
     transform: translate(0px, 20px);
   }
@@ -84,6 +99,7 @@
   0% {
     transform: rotate(-2deg);
   }
+
   100% {
     transform: rotate(2deg);
   }
@@ -93,6 +109,7 @@
   0% {
     transform: rotate(-4deg);
   }
+
   100% {
     transform: rotate(4deg);
   }
@@ -102,6 +119,7 @@
   0% {
     transform: translateX(-20px);
   }
+
   100% {
     transform: translateX(20px);
   }
@@ -111,6 +129,7 @@
   0% {
     transform: translateX(-10px);
   }
+
   100% {
     transform: translateX(10px);
   }
@@ -120,6 +139,7 @@
   0% {
     transform: rotate(-2deg);
   }
+
   100% {
     transform: rotate(4deg);
   }
@@ -129,6 +149,7 @@
   0% {
     transform: rotate(-2deg);
   }
+
   100% {
     transform: rotate(2deg);
   }
@@ -138,6 +159,7 @@
   0% {
     transform: rotate(1deg);
   }
+
   100% {
     transform: rotate(-1deg);
   }
@@ -147,6 +169,7 @@
   0% {
     transform: rotate(-4deg);
   }
+
   100% {
     transform: rotate(4deg);
   }
@@ -156,6 +179,7 @@
   0% {
     transform: translateX(-10px);
   }
+
   100% {
     transform: translateX(10px);
   }
@@ -165,21 +189,27 @@
   0% {
     opacity: 0;
   }
+
   2% {
     opacity: 1;
   }
+
   10% {
     opacity: 1;
   }
+
   80% {
     opacity: 1;
   }
+
   82% {
     opacity: 0;
   }
+
   84% {
     opacity: 1;
   }
+
   100% {
     opacity: 1;
   }
