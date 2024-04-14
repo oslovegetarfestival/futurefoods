@@ -88,20 +88,19 @@
 
 // Size
 .size--small {
-  padding: var(--spacing-1) var(--spacing-5);
+  padding: var(--spacing-2) var(--spacing-5) var(--spacing-1);
 }
 
 .size--medium {
-  padding: var(--spacing-1) var(--spacing-5);
-  font-size: 1.4rem;
+  padding: var(--spacing-2) var(--spacing-5) var(--spacing-1);
+  font-size: 1.2rem;
 
   @media (max-width: 500px) {
-    padding: var(--spacing-1) var(--spacing-4);
-    font-size: 1.2rem;
+    padding: var(--spacing-2) var(--spacing-4) var(--spacing-1);
   }
 }
 
 .size--large {
-  padding: var(--spacing-2) var(--spacing-7);
-  font-size: 1.7rem;
+  padding: var(--spacing-3) var(--spacing-7) var(--spacing-2);
+  font-size: 1.4rem;
 }
