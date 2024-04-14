@@ -40,7 +40,7 @@ const FrontPage: NextPage<Props> = ({ page = {} }) => {
         centerContent
         width="full"
         verticalPadding="xlarge"
-        background="cherry"
+        background="kale"
         isResponsive
       >
         <Section width="large" noPadding="sides">
