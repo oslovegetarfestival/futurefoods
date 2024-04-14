@@ -7,13 +7,6 @@ import { AnimationHeaderMobile } from "components/AnimationHeaderMobile"
 export const FrontpageHero = () => {
   return (
     <div style={{ position: "relative", overflow: "hidden" }}>
-      {/* <div className={styles.heroImage}>
-        <AnimationHeader />
-      </div> */}
-      {/* <div className={styles.heroImageMobile}>
-        <AnimationHeaderMobile />
-      </div> */}
-
       <Section
         width="full"
         verticalPadding="large"
@@ -21,6 +14,8 @@ export const FrontpageHero = () => {
         centerContent
       >
         <AnimationHeader />
+
+        {/* <img src="/logo.svg" alt="Future Foods" loading="eager" /> */}
 
         <div className={styles.logo}>
           <span>Future Foods</span>
