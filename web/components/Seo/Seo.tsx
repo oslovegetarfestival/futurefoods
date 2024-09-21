@@ -33,7 +33,7 @@ export const Seo = ({ page, isFrontPage, ...rest }: SeoProps) => {
   const description =
     page?.seo?.description ||
     page?.intro ||
-    "Velkommen til Future Foods 10. september 2024. Konferansen om plantebasert mat. "
+    "Velkommen til Future Foods. Konferansen om plantebasert mat. "
 
   // Ordinary main image
   const mainImage =
