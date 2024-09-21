@@ -17,10 +17,10 @@ export const FrontpageHero = () => {
 
         <div className={styles.logo}>
           <span>Future Foods</span>
-          <span>på [sted kommer] Oslo</span>
-          <span className={styles.date}>10. september</span>
+          <span>kommer tilbake</span>
+          <span className={styles.date}>i 2025</span>
         </div>
-
+        {/* 
         <Block top="7">
           <Button
             size="large"
@@ -30,7 +30,7 @@ export const FrontpageHero = () => {
           >
             Kjøp billett
           </Button>
-        </Block>
+        </Block> */}
       </Section>
     </div>
   )
