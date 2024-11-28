@@ -47,20 +47,14 @@ export const Footer = () => {
                   <p>
                     <strong>E-post</strong>
                     <br />
-                    <a href="mailto:kontakt@oslovegetarfestival.no">
-                      kontakt@oslovegetarfestival.no
+                    <a href="mailto:kontakt@futurefoods.no">
+                      kontakt@futurefoods.no
                     </a>
                   </p>
                   <p>
                     <strong>Facebook</strong> <br />
-                    <a href="https://www.facebook.com/OsloVegetarfestival">
-                      @oslovegetarfestival
-                    </a>
-                  </p>
-                  <p>
-                    <strong>Instagram</strong> <br />
-                    <a href="https://www.instagram.com/oslovegetarfestival/">
-                      @oslovegetarfestival
+                    <a href="https://www.facebook.com/futurefoodskonferansen">
+                      @futurefoodskonferansen
                     </a>
                   </p>
                 </Flow>
