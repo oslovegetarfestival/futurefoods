@@ -44,7 +44,7 @@ const FrontPage: NextPage<Props> = ({ page = {} }) => {
         isResponsive
       >
         <Section width="large" noPadding="sides">
-          <h2>Høydepunkter fra programmet</h2>
+          <h2>Dette skjer på Future Foods</h2>
 
           <Block top="7" bottom="5">
             <Card
