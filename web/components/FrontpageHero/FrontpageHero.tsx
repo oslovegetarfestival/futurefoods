@@ -17,8 +17,8 @@ export const FrontpageHero = () => {
 
         <div className={styles.logo}>
           <span>Future Foods</span>
-          <span>kommer tilbake</span>
-          <span className={styles.date}>i 2025</span>
+          <span>5. mars 2025</span>
+          <span>Factory Tøyen</span>
         </div>
         {/* 
         <Block top="7">
