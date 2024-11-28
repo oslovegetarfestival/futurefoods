@@ -1,6 +1,4 @@
 import type { NextPage } from "next"
-import { EventJsonLd } from "next-seo"
-import { urlForImage } from "lib/sanity"
 
 import { Block, Section } from "components/Layout"
 import { SanityBlockModule } from "components/SanityBlockModule"
@@ -57,37 +55,6 @@ const EventPage: NextPage<Props> = ({ page = {} }) => {
       ))}
 
       <PageNavigation previous={previousEvent} next={nextEvent} />
-
-      <EventJsonLd
-        name={currentEvent?.title}
-        startDate={currentEvent?.startDateTime}
-        endDate={currentEvent?.endDateTime}
-        location={{
-          name: "DOGA, Oslo",
-          address: {
-            streetAddress: "Hausmanns gate 16",
-            addressRegion: "Oslo",
-            postalCode: "0182",
-            addressCountry: "NO",
-          },
-        }}
-        url={page?.slug?.current}
-        images={[
-          urlForImage(currentEvent?.image)?.width(1200).fit("max").url(),
-        ]}
-        description={currentEvent?.intro}
-        organizer={{
-          type: "Organization",
-          name: "Oslo Vegetarfestival",
-          url: "https://www.futurefoods.no",
-        }}
-        offers={{
-          url: "https://www.futurefoods.no/billett",
-          availability: "https://schema.org/InStock",
-        }}
-        eventStatus="EventScheduled"
-        eventAttendanceMode="OfflineEventAttendanceMode"
-      />
     </>
   )
 }
