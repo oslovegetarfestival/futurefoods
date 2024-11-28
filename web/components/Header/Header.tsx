@@ -40,7 +40,10 @@ export const Header = ({ isFrontpage }: Props) => {
   return (
     <header>
       <Section width="large" verticalPadding="small">
-        <Flex justify="spaceBetween" align="start">
+        <Flex
+          justify={isFrontpage && !isMobileMenuOpen ? "end" : "spaceBetween"}
+          align="start"
+        >
           {(!isFrontpage || isMobileMenuOpen) && (
             <Link href="/" className={logoClass} title="Til forsiden">
               <img src="/logo.svg" alt="" aria-hidden loading="eager" />
