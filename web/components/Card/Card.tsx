@@ -94,13 +94,15 @@ export const Card = ({
       {data?.map((item) => (
         <Link key={item._id} href={item.slug?.current} className={styles.link}>
           <div className={styles.wrap}>
-            <SanityImageWrap
-              image={item?.image}
-              width={468} // = Largest width on any screen size
-              height={352}
-              isHideCaption
-              loading={isEagerLoadImages ? "eager" : "lazy"}
-            />
+            <div className={styles.imageWrap}>
+              <SanityImageWrap
+                image={item?.image}
+                width={468} // = Largest width on any screen size
+                height={352}
+                isHideCaption
+                loading={isEagerLoadImages ? "eager" : "lazy"}
+              />
+            </div>
             <div className={styles.content}>
               <p className={metadataClass}>
                 {createEventDate({ type: type, item: item })}

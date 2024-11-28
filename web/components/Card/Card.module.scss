@@ -29,12 +29,22 @@
 
 .wrap {
   position: relative;
-  transition: all 0.1s ease;
 
-  &:hover {
-    transform: translateY(-6px);
+  img {
+    transition: var(--transition);
+  }
+
+  &:hover img {
+    transform: scale(1.05);
   }
 }
+
+
+.imageWrap {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
 
 .link {
   cursor: pointer;
