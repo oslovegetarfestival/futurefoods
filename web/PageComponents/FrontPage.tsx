@@ -1,7 +1,7 @@
 import type { NextPage } from "next"
 
 import { FrontpageHero } from "components/FrontpageHero"
-import { Block, Section } from "components/Layout"
+import { Block, Flex, Section } from "components/Layout"
 import { Button } from "components/Button"
 import { Card } from "components/Card"
 import { Seo } from "components/Seo"
@@ -58,6 +58,21 @@ const FrontPage: NextPage<Props> = ({ page = {} }) => {
           <Button link="/program" color="white">
             Se hele programmet
           </Button>
+        </Section>
+      </Section>
+
+      <Section centerContent width="full" verticalPadding="xlarge" isResponsive>
+        <Section width="large" noPadding="sides">
+          <h2>Noen av årets utstillere</h2>
+
+          <Block top="7" bottom="5">
+            <Card data={page?.promotedExhibitors} isScroll />
+          </Block>
+
+          <Flex justify="center" wrap gap="small">
+            <Button link="/utstillere">Se alle utstillere</Button>
+            <Button link="/bli-utstiller">Bli utstiller</Button>
+          </Flex>
         </Section>
       </Section>
 

@@ -55,7 +55,7 @@ const ExhibitorMainPage: NextPage<Props> = ({ page = {} }) => {
         <SanityBlockModule data={module} key={module._key} />
       ))}
 
-      <Section width="large">
+      {/* <Section width="large">
         <Block bottom="2">
           <p className="font-title">Hopp til: </p>
         </Block>
@@ -66,7 +66,7 @@ const ExhibitorMainPage: NextPage<Props> = ({ page = {} }) => {
             </Button>
           ))}
         </Flex>
-      </Section>
+      </Section> */}
 
       {groupedByType?.map(({ title, items }: ExhibitionItem) => (
         <Section width="large" verticalPadding="large" key={title}>
