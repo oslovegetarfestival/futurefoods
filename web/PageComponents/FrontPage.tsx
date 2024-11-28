@@ -49,7 +49,7 @@ const FrontPage: NextPage<Props> = ({ page = {} }) => {
           <Block top="7" bottom="5">
             <Card
               data={page?.promotedEvents}
-              type="eventWithDate"
+              type="event"
               color="lavender"
               isScroll
             />

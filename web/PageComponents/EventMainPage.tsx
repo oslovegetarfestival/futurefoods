@@ -1,10 +1,9 @@
 import type { NextPage } from "next"
 
-import { Block, Flex, Flow, Section } from "components/Layout"
+import { Flow, Section } from "components/Layout"
 
 import { Card } from "components/Card"
 import { SanityBlockModule } from "components/SanityBlockModule"
-import { Button } from "components/Button"
 import { weekDay, weekDayAndDate } from "utils/date"
 import { Seo } from "components/Seo"
 import { useEffect, useState } from "react"
@@ -97,7 +96,8 @@ const EventMainPage: NextPage<Props> = ({ page = {} }) => {
         <SanityBlockModule data={module} key={module._key} />
       ))}
 
-      {hasEvents && (
+      {/* Disabled since Future Foods is one day and one venue */}
+      {/* {hasEvents && (
         <Section width="large">
           <Flex justify="spaceBetween" gap="medium">
             <div style={{ flex: "1 1 0px" }}>
@@ -153,7 +153,7 @@ const EventMainPage: NextPage<Props> = ({ page = {} }) => {
             </div>
           </Flex>
         </Section>
-      )}
+      )} */}
 
       {groupedData?.map(({ startDate, items }: EventGroupedItem) => (
         <Section width="large" verticalPadding="large" key={startDate}>
