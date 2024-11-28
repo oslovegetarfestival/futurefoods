@@ -48,8 +48,8 @@ export const AnimationHeader = () => {
               y2="351.029"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#FFEBFF" />
-              <stop offset="1" stop-color="#FFE95D" />
+              <stop stopColor="#FFEBFF" />
+              <stop offset="1" stopColor="#FFE95D" />
             </linearGradient>
             <linearGradient
               id="paint1_linear_855_271"
@@ -59,12 +59,12 @@ export const AnimationHeader = () => {
               y2="779.541"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#268562" />
-              <stop offset="0.17" stop-color="#24805D" />
-              <stop offset="0.37" stop-color="#1F7250" />
-              <stop offset="0.59" stop-color="#175B3C" />
-              <stop offset="0.81" stop-color="#0B3B1E" />
-              <stop offset="1" stop-color="#001900" />
+              <stop stopColor="#268562" />
+              <stop offset="0.17" stopColor="#24805D" />
+              <stop offset="0.37" stopColor="#1F7250" />
+              <stop offset="0.59" stopColor="#175B3C" />
+              <stop offset="0.81" stopColor="#0B3B1E" />
+              <stop offset="1" stopColor="#001900" />
             </linearGradient>
             <linearGradient
               id="paint2_linear_855_271"
@@ -74,11 +74,11 @@ export const AnimationHeader = () => {
               y2="162.46"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#BFB6FF" />
-              <stop offset="0.2" stop-color="#C5B8F7" />
-              <stop offset="0.52" stop-color="#D8C0E1" />
-              <stop offset="0.9" stop-color="#F6CCBE" />
-              <stop offset="1" stop-color="#FFD0B4" />
+              <stop stopColor="#BFB6FF" />
+              <stop offset="0.2" stopColor="#C5B8F7" />
+              <stop offset="0.52" stopColor="#D8C0E1" />
+              <stop offset="0.9" stopColor="#F6CCBE" />
+              <stop offset="1" stopColor="#FFD0B4" />
             </linearGradient>
             <linearGradient
               id="paint3_linear_855_271"
@@ -88,8 +88,8 @@ export const AnimationHeader = () => {
               y2="322.524"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#FFC662" />
-              <stop offset="1" stop-color="#FF9E99" />
+              <stop stopColor="#FFC662" />
+              <stop offset="1" stopColor="#FF9E99" />
             </linearGradient>
           </defs>
         </svg>
@@ -169,8 +169,8 @@ export const AnimationHeader = () => {
               y2="346.98"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#FFCB8F" />
-              <stop offset="1" stop-color="#FFEF76" />
+              <stop stopColor="#FFCB8F" />
+              <stop offset="1" stopColor="#FFEF76" />
             </linearGradient>
             <linearGradient
               id="paint1_linear_855_270"
@@ -180,8 +180,8 @@ export const AnimationHeader = () => {
               y2="217.038"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#FFC662" />
-              <stop offset="1" stop-color="#FF9E99" />
+              <stop stopColor="#FFC662" />
+              <stop offset="1" stopColor="#FF9E99" />
             </linearGradient>
             <linearGradient
               id="paint2_linear_855_270"
@@ -191,8 +191,8 @@ export const AnimationHeader = () => {
               y2="218.042"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#FFC662" />
-              <stop offset="1" stop-color="#FF9E99" />
+              <stop stopColor="#FFC662" />
+              <stop offset="1" stopColor="#FF9E99" />
             </linearGradient>
             <linearGradient
               id="paint3_linear_855_270"
@@ -202,8 +202,8 @@ export const AnimationHeader = () => {
               y2="218.042"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#FFC662" />
-              <stop offset="1" stop-color="#FF9E99" />
+              <stop stopColor="#FFC662" />
+              <stop offset="1" stopColor="#FF9E99" />
             </linearGradient>
             <linearGradient
               id="paint4_linear_855_270"
@@ -213,12 +213,12 @@ export const AnimationHeader = () => {
               y2="414.877"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#268562" />
-              <stop offset="0.17" stop-color="#24805D" />
-              <stop offset="0.37" stop-color="#1F7250" />
-              <stop offset="0.59" stop-color="#175B3C" />
-              <stop offset="0.81" stop-color="#0B3B1E" />
-              <stop offset="1" stop-color="#001900" />
+              <stop stopColor="#268562" />
+              <stop offset="0.17" stopColor="#24805D" />
+              <stop offset="0.37" stopColor="#1F7250" />
+              <stop offset="0.59" stopColor="#175B3C" />
+              <stop offset="0.81" stopColor="#0B3B1E" />
+              <stop offset="1" stopColor="#001900" />
             </linearGradient>
           </defs>
         </svg>
