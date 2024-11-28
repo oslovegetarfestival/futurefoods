@@ -28,7 +28,7 @@ export const Footer = () => {
                     Future Foods er konferansen om plantebasert mat. Vi
                     inviterer deg som jobber med matbransjen til en inspirerende
                     dag med dyktige foredragsholdere, case studies og mingling.{" "}
-                    <Link href="/om-oss" className="link link--white">
+                    <Link href="/om-konferansen" className="link link--white">
                       Mer om Future Foods
                     </Link>
                     .
