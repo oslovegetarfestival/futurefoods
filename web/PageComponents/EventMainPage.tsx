@@ -57,6 +57,8 @@ const groupEventByDate = (data: EventItem[]) => {
 const EventMainPage: NextPage<Props> = ({ page = {} }) => {
   const groupedData = groupEventByDate(page?.items)
 
+  const hasEvents = groupedData?.length > 0
+
   // Create a list of all unique locations
   const uniqueLocations = page?.items
     ?.map((item) => item?.location?.title)
@@ -95,59 +97,63 @@ const EventMainPage: NextPage<Props> = ({ page = {} }) => {
         <SanityBlockModule data={module} key={module._key} />
       ))}
 
-      <Section width="large">
-        <Flex justify="spaceBetween" gap="medium">
-          <div style={{ flex: "1 1 0px" }}>
-            <Block bottom="2">
-              <p className="font-title">Hopp til: </p>
-            </Block>
-            <Flex align="center" gap="small" wrap>
-              {groupedData?.map(({ startDate }) => (
-                <Button
-                  size="small"
-                  isArrow={false}
-                  key={startDate}
-                  link={`#${weekDay(startDate)}`}
-                >
-                  <span className="uppercase-first">{weekDay(startDate)}</span>
-                </Button>
-              ))}
-            </Flex>
-          </div>
+      {hasEvents && (
+        <Section width="large">
+          <Flex justify="spaceBetween" gap="medium">
+            <div style={{ flex: "1 1 0px" }}>
+              <Block bottom="2">
+                <p className="font-title">Hopp til: </p>
+              </Block>
+              <Flex align="center" gap="small" wrap>
+                {groupedData?.map(({ startDate }) => (
+                  <Button
+                    size="small"
+                    isArrow={false}
+                    key={startDate}
+                    link={`#${weekDay(startDate)}`}
+                  >
+                    <span className="uppercase-first">
+                      {weekDay(startDate)}
+                    </span>
+                  </Button>
+                ))}
+              </Flex>
+            </div>
 
-          <div style={{ flex: "1 1 0px" }}>
-            <Block bottom="2">
-              <p className="font-title">Vis kun: </p>
-            </Block>
-            <Flex align="center" gap="small" wrap>
-              <Button
-                color={currentFilter === "" ? "pink" : "cherry"}
-                size="small"
-                isArrow={false}
-                onClick={() => {
-                  handleFilterClick("")
-                }}
-              >
-                Vis alt
-              </Button>
-
-              {uniqueLocations?.map((location: string) => (
+            <div style={{ flex: "1 1 0px" }}>
+              <Block bottom="2">
+                <p className="font-title">Vis kun: </p>
+              </Block>
+              <Flex align="center" gap="small" wrap>
                 <Button
-                  key={location}
-                  color={currentFilter === location ? "pink" : "cherry"}
+                  color={currentFilter === "" ? "pink" : "cherry"}
                   size="small"
                   isArrow={false}
                   onClick={() => {
-                    handleFilterClick(location)
+                    handleFilterClick("")
                   }}
                 >
-                  {location}
+                  Vis alt
                 </Button>
-              ))}
-            </Flex>
-          </div>
-        </Flex>
-      </Section>
+
+                {uniqueLocations?.map((location: string) => (
+                  <Button
+                    key={location}
+                    color={currentFilter === location ? "pink" : "cherry"}
+                    size="small"
+                    isArrow={false}
+                    onClick={() => {
+                      handleFilterClick(location)
+                    }}
+                  >
+                    {location}
+                  </Button>
+                ))}
+              </Flex>
+            </div>
+          </Flex>
+        </Section>
+      )}
 
       {groupedData?.map(({ startDate, items }: EventGroupedItem) => (
         <Section width="large" verticalPadding="large" key={startDate}>
