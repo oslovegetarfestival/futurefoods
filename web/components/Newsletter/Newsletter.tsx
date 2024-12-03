@@ -5,7 +5,7 @@ import { Button } from "components/Button"
 export const Newsletter = () => {
   return (
     <Button
-      link="https://zcmp.eu/sZa"
+      link="https://zcmp.eu/6orm"
       size="small"
       isOpenInNewWindow
       color="white"
