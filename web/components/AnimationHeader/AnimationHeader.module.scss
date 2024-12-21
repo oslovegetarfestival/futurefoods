@@ -1,6 +1,6 @@
 .wrapLeft {
   position: absolute;
-  right: calc(50% + 480px);
+  right: calc(50% + 450px);
   transform: translateX(50%);
   z-index: -1;
   width: 500px;
@@ -8,7 +8,8 @@
 
   @media(max-width: 800px) {
     left: -80px;
-    width: 200px;
+    top: -270px;
+    width: 300px;
     transform: none;
   }
 }
@@ -21,8 +22,9 @@
   z-index: -1;
 
   @media(max-width: 800px) {
-    right: -80px;
-    width: 200px;
+    right: -120px;
+    width: 300px;
+    top: 140px;
     transform: none;
   }
 }
@@ -51,7 +53,7 @@
 }
 
 .sway {
-  animation: sway 4s infinite ease alternate;
+  animation: sway 3s infinite ease alternate;
   transform-origin: center bottom;
 }
 
@@ -61,12 +63,12 @@
 }
 
 .tilt {
-  animation: tilt 7s infinite ease alternate;
+  animation: tilt 6s infinite ease alternate;
   transform-origin: center bottom;
 }
 
 .rotate {
-  animation: rotate 4s infinite ease alternate;
+  animation: rotate 3.2s infinite ease alternate;
   transform-origin: center;
 }
 

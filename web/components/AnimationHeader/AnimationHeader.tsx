@@ -7,7 +7,7 @@ export const AnimationHeader = () => {
         <svg
           width="842"
           height="800"
-          viewBox="0 0 842 800"
+          viewBox="0 0 870 830"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -99,7 +99,7 @@ export const AnimationHeader = () => {
         <svg
           width="954"
           height="631"
-          viewBox="0 0 954 631"
+          viewBox="0 0 974 661"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
