@@ -87,18 +87,21 @@ h2,
 .h2 {
   @include fluid-type($minWidth, $maxWidth, 28px, 36px);
   font-weight: 600;
+  font-family: "NeueMachina";
 }
 
 h3,
 .h3 {
-  @include fluid-type($minWidth, $maxWidth, 22px, 28px);
+  @include fluid-type($minWidth, $maxWidth, 20px, 26px);
   font-weight: 600;
+  font-family: "NeueMachina";
 }
 
 h4,
 .h4 {
   font-size: 1.2rem;
   font-weight: 600;
+  font-family: "NeueMachina";
 }
 
 h5,
@@ -120,16 +123,18 @@ p {
 }
 
 .lead {
-  @include fluid-type($minWidth, $maxWidth, 22px, 28px);
+  @include fluid-type($minWidth, $maxWidth, 20px, 26px);
   text-align: center;
   margin: 1rem auto 0;
   text-wrap: balance;
+  font-family: "NeueMachina";
 }
 
 .page-title {
   @include fluid-type($minWidth, $maxWidth, 30px, 50px);
   text-align: center;
   text-wrap: balance;
+  font-family: "NeueMachina";
 }
 
 .breadcrumb {
