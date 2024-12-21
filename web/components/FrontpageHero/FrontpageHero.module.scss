@@ -1,23 +1,21 @@
-.logo {
+.logoWrap {
   line-height: 1.1;
-  font-size: 2.4rem;
+  font-size: 1.4rem;
   font-family: "NeueMachina";
-  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   line-height: 1.4;
+  margin-top: var(--spacing-8);
+}
 
+.logo {
+  margin-bottom: var(--spacing-6);
+  width: 450px;
 
-  @media (max-width: 900px) {
-    font-size: 6vw;
-    height: auto;
-    margin-top: 35px;
-  }
-
-  span {
-    display: block;
+  @media (max-width: 650px) {
+    padding: 0 var(--spacing-8);
   }
 }
 

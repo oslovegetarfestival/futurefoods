@@ -15,22 +15,17 @@ export const FrontpageHero = () => {
       >
         <AnimationHeader />
 
-        <div className={styles.logo}>
-          <span>Future Foods</span>
-          <span>5. mars 2025</span>
-          <span>Factory Tøyen</span>
+        <div className={styles.logoWrap}>
+          <img
+            src="/logo.svg"
+            alt=""
+            aria-hidden
+            loading="eager"
+            className={styles.logo}
+          />
+          <div className="h2">5. mars 2025</div>
+          <div className="h2">Factory Tøyen</div>
         </div>
-        {/* 
-        <Block top="7">
-          <Button
-            size="large"
-            color="pink"
-            link="https://zfrmz.eu/dMpMokClyBvN6ynQ0c2w"
-            isOpenInNewWindow
-          >
-            Kjøp billett
-          </Button>
-        </Block> */}
       </Section>
     </div>
   )
