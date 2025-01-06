@@ -46,8 +46,7 @@ export const Seo = ({ page, isFrontPage, ...rest }: SeoProps) => {
     urlForImage(page?.seo?.image)?.width(1200).height(630).url()
 
   // Default image
-  // TODO: Find a better default image
-  const defaultImage = "https://futurefoods.no/logo-default-some.png?v=1"
+  const defaultImage = "https://futurefoods.no/default-some.jpg?v=3"
 
   const images = []
 
